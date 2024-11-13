@@ -71,15 +71,14 @@
 <div class="container">
 <h1 class="heading">ROHIT SHARMA</h1>
 <img src="./images/rohit 1.jfif" class="image" id="slide">
-<div class="image-body">
-  
-    <img src="./images/back-arrow-icon.webp" class="left-btn" onclick="back()" />
+     <div class="image-body">
+   <img src="./images/back-arrow-icon.webp" class="left-btn" onclick="back()" />
     <img src="./images/next arrow.png" class=" right-btn" onclick="next()" />
 </div>
 </div>
 
 <script>
-    const images = ["./images/rohit 1.jfif", "./images/rohit 4.jfif", "./images/rohit 2.jfif", "./images/rohit 3.jfif",];
+    const images = ["./images/rohit 1.jfif", "./images/rohit 4.jfif", "./images/rohit 2.jfif", "./images/rohit 3.jfif","./images/rohit 1.html"];
     let index = 0;
     const slide = document.getElementById('slide');
 
@@ -94,7 +93,6 @@
 
         slide.src = images[index]
     }
-
     function back() {
         if (index > 0) {
             index--;
@@ -104,9 +102,6 @@
         }
         slide.src = images[index]
     }
-
-  
-
 </script>
 </body>
 </html>
