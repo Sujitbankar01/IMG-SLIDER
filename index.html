@@ -6,7 +6,9 @@
 <body>
     <style>
   
-
+.body{
+    background-color: bisque;
+}
     .heading{
         text-align: center;
         font-size: 40px;
@@ -61,14 +63,10 @@
         cursor: pointer;
         transition: 0.10s;
     }
-
-    
-   
 </style>
 </head>
-
 <body>
-<div class="container">
+<div class="container body">
 <h1 class="heading">ROHIT SHARMA</h1>
 <img src="./images/rohit 1.jfif" class="image" id="slide">
      <div class="image-body">
@@ -78,10 +76,9 @@
 </div>
 
 <script>
-    const images = ["./images/rohit 1.jfif", "./images/rohit 4.jfif", "./images/rohit 2.jfif", "./images/rohit 3.jfif","./images/rohit 1.html"];
+    const images = ["./images/rohit 1.jfif", "./images/rohit 4.jfif", "./images/rohit 2.jfif", "./images/rohit 3.jfif",];
     let index = 0;
     const slide = document.getElementById('slide');
-
 
     function next() {
         if (index < images.length - 1) {
